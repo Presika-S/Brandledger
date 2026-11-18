@@ -2,9 +2,16 @@
 
 BrandLedger checks every number, name, term and promise in a draft against a versioned Brand Source of Truth (each fact has an owner, a source and an expiry date), shows the approved source and a suggested fix, and lets a human decide. When it is unsure it abstains and asks the fact owner. When a fact changes, a reverse check finds published content that still carries the old claim. Every publish is sealed with a hash-linked receipt.
 
+**🔗 Live demo: [https://brandledger-nexora.vercel.app/](https://brandledger-nexora.vercel.app/)**
+
 This package merges the Round 2 single-file prototype (`index.html`) with the corrected full-stack build.
 
+## Live demo
+Try it in your browser with no install: **[brandledger-nexora.vercel.app](https://brandledger-nexora.vercel.app/)**. Pick a door on the sign-in page (Writer, Fact Owner, Brand Manager or Admin), enter your name, and follow the demo script below.
+
 ## Quick start (no install)
+Open the [live demo](https://brandledger-nexora.vercel.app/), or run it locally:
+
 Double-click `index.html`. Internet is needed for Google Fonts and, the first time you run OCR on your own image, to download the Tesseract.js reader. Pick a door on the sign-in page and enter your name.
 
 Deploy as static: drag this folder to Vercel/Netlify or run `npx serve .`.
@@ -19,6 +26,8 @@ Deploy as static: drag this folder to Vercel/Netlify or run `npx serve .`.
 | `docs/` | Architecture and Responsible AI disclosure. |
 
 ## Demo script (5 minutes)
+Start at the [live demo](https://brandledger-nexora.vercel.app/).
+
 1. Landing page: watch the draft type itself and get checked, apply the fixes and seal it, change F-021 on the pinboard to see stale items, click through the pipeline, try to cheat a receipt.
 2. Open the **Writer** door and enter your name. Then: Check content > Load sample > Check claims. Click a highlighted claim to open the Evidence explorer.
 3. Correction studio: Apply all fixes, or Dispute (reason dialog) / Ask owner. Submit for review.
